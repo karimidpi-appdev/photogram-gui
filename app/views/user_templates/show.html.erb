@@ -6,7 +6,15 @@
   <dd><%= @the_user.id %></dd>
 
   <dt>Edit user</dt>
-  <dd>form</dd>
+  <dd>
+  
+    <form action="/update_user/<%= @the_user.id %>">
+      <label for="a_name">Username</label>
+      <input id="a_name" name="query_update" value="<%= @the_user.username %>">
+      <button>Update user</button>
+    </form>
+
+  </dd>
 
 </dl>
 
